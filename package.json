@@ -4,7 +4,10 @@
   "description": "A minimalist set up to test firebase authentication",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx serve"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
   },
   "keywords": [
     "Firebase",
