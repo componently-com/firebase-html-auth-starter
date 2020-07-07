@@ -4,7 +4,7 @@
   "description": "A minimalist set up to test firebase authentication",
   "main": "index.html",
   "scripts": {
-    "start": "npx serve"
+    "start": "serve"
   },
   "dependencies": {
     "serve": "^11.3.2"
