@@ -4,10 +4,7 @@
   "description": "A minimalist set up to test firebase authentication",
   "main": "index.html",
   "scripts": {
-    "start": "serve"
-  },
-  "dependencies": {
-    "serve": "^11.3.2"
+    "start": "live-server"
   },
   "keywords": [
     "Firebase",
@@ -18,5 +15,8 @@
     "Signup"
   ],
   "author": "Daniel Bartholomae <daniel.bartholomae@componently.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
