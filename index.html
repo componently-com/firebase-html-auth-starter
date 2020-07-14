@@ -1,26 +1,18 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-    <script src="./config.js"></script>
-</head>
-<body>
-    <script>
-        // Initialize the FirebaseUI Widget using Firebase.
-        firebase.initializeApp(firebaseConfig);
-        var ui = new firebaseui.auth.AuthUI(firebase.auth());
-        ui.start('#firebaseui-login-container', {
-          signInOptions: [
-            firebase.auth.EmailAuthProvider.PROVIDER_ID,
-            firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-            firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-            firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-            firebase.auth.GithubAuthProvider.PROVIDER_ID
-          ]
-        });
-    </script>
+  <head>
+    <title>Firebase Auth HTML Starter</title>
+    <meta charset="UTF-8" />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="node_modules/firebaseui/dist/firebaseui.css"
+    />
+    <script src="src/index.js"></script>
+  </head>
+
+  <body>
     <div id="firebaseui-login-container"></div>
-</body>
-</html>	
+  </body>
+</html>
