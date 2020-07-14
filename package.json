@@ -4,7 +4,8 @@
   "description": "A minimalist set up to test firebase authentication",
   "main": "index.html",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "keywords": [
     "Firebase",
@@ -17,6 +18,11 @@
   "author": "Daniel Bartholomae <daniel.bartholomae@componently.com>",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "@babel/core": "^7.10.4",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "firebase": "^7.16.0",
+    "firebaseui": "^4.5.2"
   }
 }
